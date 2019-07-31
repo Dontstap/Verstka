@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            * {padding: 0; margin: 0}
+
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+
+            .col-xl-1,
+            .col-xl-2,
+            .col-lg-3,
+            .col-lg-4,
+            .col-lg-5,
+            .col-md-6,
+            .col-md-7,
+            .col-md-8,
+            .col-md-9,
+            .col-md-10,
+            .col-xs-11,
+            .col-xs-12 {
+                padding-left: 0px;
+                padding-right: 0px;
+                box-sizing: border-box;
+            }
+
+            .col-xs-11 {
+                flex-basis: 91.9999%
+            }
+
+            .col-xs-12 {
+                flex-basis: 100%
+            }
+
+            @media (min-width: 768px) {
+                .col-md-4 {
+                    flex-basis: 33.3331%
+                }
+
+                .col-md-5 {
+                    flex-basis: 41.6664%
+                }
+
+                .col-md-6 {
+                    flex-basis: 49.9998%
+                }
+
+                .col-md-7 {
+                    flex-basis: 49.9998%
+                }
+
+                .col-md-8 {
+                    flex-basis: 66.6664%
+                }
+
+                .col-md-9 {
+                    flex-basis: 74.9997%
+                }
+
+                .col-md-12 {
+                    flex-basis: 100%
+                }
+            }
+
+            @media (min-width: 991px) {
+                .col-lg-3 {
+                    flex-basis: 24.9999%
+                }
+
+                .col-lg-4 {
+                    flex-basis: 33.3333%
+                }
+
+                .col-lg-6 {
+                    flex-basis: 49.9998%
+                }
+            }
+
+            @media (min-width: 1200px) {
+                .col-xl-4 {
+                    flex-basis: 33.3333%
+                }
+
+                .col-xl-6 {
+                    flex-basis: 49.9998%
+                }
+
+                .col-xl-12 {
+                    flex-basis: 100%
+                }
+            }
+
+            .card {
+                background: rgba(255, 0, 0, 0.3);
+                border: 1px solid rgba(72, 72, 72, 0.2);
+                margin-bottom: 20px;
+                text-align: center
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 card">Homes</div>
+                <div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 card">Experiences</div>
+                <div class="col-xs-12 col-md-7 col-lg-4 col-xl-4 card">Restaurants</div>
+                <div class="col-xs-12 col-md-7 col-lg-6 col-xl-6 card">Restaurants and six columns</div>
+                <div class="col-xs-12 col-md-12 col-lg-6 col-xl-6 card">Homes and six columns</div>
+            </div>
+        </div>
+    </body>
+</html>
