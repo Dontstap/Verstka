@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Your Favorite Restaurants, Delivered Fast | Download Uber Eats</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0
+        }
+
+        .Icon_and_Button {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 3;
+            height: 80px;
+            padding: 0 80px;
+            box-shadow: none;
+            box-sizing: border-box;
+            background-color: #ffffff
+        }
+
+        .UEpicture {
+            height: 24px;
+        }
+
+        .Sign_In {
+            height: 19px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+            color: #1f1f1f
+        }
+
+        .header {
+            display: block;
+            box-sizing: border-box;
+            position: relative;
+            margin: 0 auto;
+        }
+
+        .hd_pic {
+            overflow: hidden;
+            z-index: 1;
+            height: 415px;
+            background-color: #f2dded;
+            position: relative;
+            display: block;
+        }
+        .hd_pic1 {
+            z-index: -1;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 100%;
+        }
+
+        .hd_pic2 {
+            z-index: -1;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: auto;
+            width: auto;
+        }
+
+        .hd_text {
+            transform: translate(-50%, -50%);
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            z-index: 1;
+            display: block;
+
+        }
+
+        .hd-text-title {
+            text-align: center;
+            margin-bottom: 4px;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 44px;
+            letter-spacing: 0.03em;
+            font-size: 36px;
+            color: #1f1f1f;
+            font-weight: normal;
+            margin: 0;
+        }
+
+        .searching_form {
+            margin-top: 40px;
+        }
+
+        .enter_addres {
+            flex: 1;
+            position: relative;
+            display: block;
+            border: none;
+        }
+
+        .text_searching {
+            border: none;
+            padding: 12px 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 24px;
+            font-size: 16px;
+            display: flex;
+            color: #1f1f1f;
+            box-sizing: border-box;
+            z-index: 3;
+            background-color: #ffffff;
+            position: relative;
+            min-width: 100%;
+        }
+
+        input {
+            padding: 0;
+            border: 0;
+            font: normal;
+            color: midnightblue;
+            letter-spacing: inherit;
+            text-rendering: auto;
+            color: initial;
+            letter-spacing: normal;
+            word-spacing: normal;
+            text-transform: none;
+            text-indent: 0px;
+            text-shadow: none;
+            display: inline-block;
+            text-align: start;
+            -webkit-appearance: textfield;
+            background-color: white;
+            -webkit-rtl-ordering: logical;
+            cursor: text;
+            margin: 0em;
+            font: 400 13.3333px Arial;
+            padding: 1px 0px;
+            border-width: 2px;
+            border-style: inset;
+            border-color: initial;
+            border-image: initial;
+            line-height: 24px;
+        }
+
+        .enter_text {
+            flex: 1;
+            background-color: #ffffff;
+            border: none;
+        }
+
+        .find_food {
+            background: #3e9920;
+            width: auto;
+            cursor: pointer;
+            color: #ffffff;
+            padding: 12px 16px;
+            -webkit-box-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 24px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            border-width: 0;
+            padding: 0;
+            margin: 0;
+            background: transparent;
+            font: inherit;
+            color: inherit;
+            letter-spacing: inherit;
+            text-rendering: auto;
+            letter-spacing: normal;
+            word-spacing: normal;
+            text-transform: none;
+            text-indent: 0px;
+            text-shadow: none;
+            display: inline-block;
+            text-align: center;
+            align-items: flex-start;
+            cursor: default;
+            box-sizing: border-box;
+            margin: 0em;
+            font: 400 13.3333px Arial;
+            padding: 1px 6px;
+            border-width: 2px;
+            border-style: outset;
+            border-image: initial;
+            flex: 1;
+        }
+
+    </style>
+
+<body>
+    <div class="Icon_and_Button">
+        <a class="UEpicture" href="https://www.ubereats.com/en-US/">
+            <img src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/f8f0721f871b3704cce92eb96bc6e504.svg"></a>
+        <a rel="nofollow" tabindex="0" href="https://www.ubereats.com/login-redirect/?redirect=%2Fen-US%2F"
+            class="Sign_In">Sign In</a>
+    </div>
+    <header>
+        <div class="header">
+            <div class="hd_pic">
+                <img src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/80955d5c390a1ac8ad4585a07c774ddc.svg"
+                    class="hd_pic1">
+                <img src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/fffa4d61a4011f239fff95f887ddc659.svg"
+                    class="hd_pic2">
+            </div>
+            <div class="hd_text">
+                <h1 class="hd-text-title">Restaurants you love, delivered to you</h1>
+                <form class="searching_form">
+                    <div area-label="enter address" class="enter_addres">
+                        <div class="text_searching">
+                            <svg width="24px" height="24px" fill="none" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg" class="znachok">
+                                <path
+                                    d="m12.0001 2.83398c2 0 4.0833.75 5.5833 2.33334 3.0833 3.08333 3.0833 8.16668 0 11.16668l-5.5833 5.6667-5.58335-5.5834c-3.08334-3.0833-3.08334-8.16665 0-11.24998 1.5-1.58334 3.58335-2.33334 5.58335-2.33334zm0 15.66672 3.8333-3.8334c2.0833-2.1666 2.0833-5.58332 0-7.74998-1-1-2.4167-1.58334-3.8333-1.58334-1.4167 0-2.83335.58334-3.83335 1.58334-2.08334 2.16666-2.08334 5.58338 0 7.74998zm1.6666-7.75c0 .9204-.7462 1.6666-1.6666 1.6666-.9205 0-1.6667-.7462-1.6667-1.6666 0-.92052.7462-1.66672 1.6667-1.66672.9204 0 1.6666.7462 1.6666 1.66672z"
+                                    fill-rule="evenodd" clip-rule="evenodd" fill="#1F1F1F">
+                            </svg>
+                            <input type="text" name="userQuery" placeholder="Enter delivery addres" class="enter_text">
+                        </div>
+                    </div>
+                    <button type="submit" class="find_food">Find Food</button>
+                </form>
+
+            </div>
+        </div>
+    </header>
+
+
+
+</body>
+</head>
+
+</html>
