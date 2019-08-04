@@ -45,9 +45,10 @@
             z-index: 1;
             height: 415px;
             background-color: #f2dded;
-            position: relative;
+            position:relative;
             display: block;
         }
+
         .hd_pic1 {
             z-index: -1;
             position: absolute;
@@ -58,11 +59,7 @@
 
         .hd_pic2 {
             z-index: -1;
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            height: auto;
-            width: auto;
+            position:relative;
         }
 
         .hd_text {
@@ -88,6 +85,7 @@
         }
 
         .searching_form {
+            display: flex;
             margin-top: 40px;
         }
 
@@ -134,7 +132,6 @@
             cursor: text;
             margin: 0em;
             font: 400 13.3333px Arial;
-            padding: 1px 0px;
             border-width: 2px;
             border-style: inset;
             border-color: initial;
@@ -143,55 +140,24 @@
         }
 
         .enter_text {
+            display: block;
             flex: 1;
             background-color: #ffffff;
             border: none;
         }
 
         .find_food {
+            margin-left: 10px;
+            border: none;
+            padding: 0px 10px;
             background: #3e9920;
-            width: auto;
             cursor: pointer;
             color: #ffffff;
-            padding: 12px 16px;
-            -webkit-box-pack: center;
-            justify-content: center;
-            -webkit-box-align: center;
-            align-items: center;
             font-family: Arial, Helvetica, sans-serif;
-            line-height: 24px;
-            font-size: 16px;
+            line-height: 25px;
+            font-size: 20px;
             box-sizing: border-box;
         }
-
-        button {
-            border-width: 0;
-            padding: 0;
-            margin: 0;
-            background: transparent;
-            font: inherit;
-            color: inherit;
-            letter-spacing: inherit;
-            text-rendering: auto;
-            letter-spacing: normal;
-            word-spacing: normal;
-            text-transform: none;
-            text-indent: 0px;
-            text-shadow: none;
-            display: inline-block;
-            text-align: center;
-            align-items: flex-start;
-            cursor: default;
-            box-sizing: border-box;
-            margin: 0em;
-            font: 400 13.3333px Arial;
-            padding: 1px 6px;
-            border-width: 2px;
-            border-style: outset;
-            border-image: initial;
-            flex: 1;
-        }
-
     </style>
 
 <body>
@@ -225,7 +191,6 @@
                     </div>
                     <button type="submit" class="find_food">Find Food</button>
                 </form>
-
             </div>
         </div>
     </header>
